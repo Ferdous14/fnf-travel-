@@ -1,0 +1,163 @@
+* {
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fnf {
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.travel {
+    color: #FF5400;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.nav-title-container img {
+    height: 100%;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu-container a {
+    text-decoration: none;
+    color: var(--Dark-02, #424247);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#home {
+    color: #FF5400;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* banner start */
+
+.banner-container img {
+    width: 100%;
+    margin-top: 45px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+}
+
+.banner-title {
+    color: white;
+    font-size: 64px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner-description {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.input-container {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 16px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    max-width: 768px;
+    margin: 45px auto 0 auto;
+    position: relative;
+}
+
+.input-container input {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FFF;
+    /* text-align: center; */
+}
+
+.btn-primary {
+    width: 170px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 12px 25px;
+    border: 0;
+}
+
+.banner-container {
+    position: relative;
+}
+
+.banner-content {
+
+    position: absolute;
+    bottom: 200px;
+    left: 300px;
+}
+
+#second-icon {
+    position: absolute;
+    left: 355px;
+
+}
+
+#first-icon {
+    position: absolute;
+    right: 230px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    body {
+        max-width: 600px;
+    }
+
+    .nav-container,
+    .menu-container {
+        flex-direction: column;
+    }
+
+    .menu-container {
+        gap: 20px;
+    }
+}
