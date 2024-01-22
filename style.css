@@ -2,10 +2,10 @@
     font-family: 'Mulish', sans-serif;
 }
 
-body {
+/* body {
     max-width: 1440px;
     margin: 0 auto;
-}
+} */
 
 .nav-container {
     display: flex;
@@ -169,7 +169,8 @@ body {
     font-size: 16px;
     font-weight: 400;
 }
-.popular-tour-btn{
+
+.popular-tour-btn {
     width: 170px;
     border-radius: 8px;
     background: #FF5400;
@@ -183,7 +184,7 @@ body {
 
 /* destination starts */
 .destination {
-    width: 1440px;
+    max-width: 1440px;
 }
 
 .destination-title {
@@ -511,6 +512,7 @@ body {
 
 /* perfect place start */
 .perfect-place-container {
+    max-width: 1440px;
     margin-top: 100px;
     display: flex;
 }
@@ -689,7 +691,7 @@ body {
 /* footer start */
 footer {
     margin-top: 100px;
-    width: 1440px;
+    max-width: 1440px;
     height: 502px;
     background: rgba(19, 19, 24, 0.05);
 }
@@ -728,18 +730,211 @@ footer {
 
 
 
-
+/* mobile device */
 @media screen and (max-width: 600px) {
-    body {
+    /* body {
         max-width: 600px;
-    }
+        border: 1px solid red;
+    } */
 
-    .nav-container,
-    .menu-container {
+    .nav-container {
         flex-direction: column;
     }
 
     .menu-container {
         gap: 20px;
+        display: flex;
+        flex-direction: row;
     }
+
+    .banner-container img {
+        object-fit: cover;
+        height: 555px;
+        margin-top: 45px;
+        border-radius: 16px;
+        background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    }
+
+    .banner-content {
+        position: absolute;
+        bottom: 30px;
+        left: 25%;
+        width: 300px;
+    }
+
+    .menu-container {
+        gap: 20px;
+    }
+
+    .input-container {
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.30);
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        max-width: 600px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .banner-title {
+        color: white;
+        font-size: 22px;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .banner-description {
+        margin-bottom: 30px;
+    }
+
+    #first-icon {
+        position: absolute;
+        right: 25%;
+        bottom: 58%;
+    }
+
+    #second-icon {
+        position: absolute;
+        left: 70%;
+        bottom: 33%;
+    }
+
+    .btn-primary {
+        width: 200px;
+    }
+
+    /* popular tour */
+    .popular-tour-container {
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 30px;
+    }
+
+    .tour-content {
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .popular-tour-container img {
+        width: 100%;
+    }
+
+    /* destination start */
+    .destination {
+        max-width: 600px;
+    }
+    .destination-title{
+        margin-top: 30px;
+    }
+    .destination-img-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    /* why choose us */
+    .why-choose-us {
+        max-width: 600px;
+        margin-top: 35px;
+    }
+    .handpicked-hotels-container {
+        margin: 0 30px;
+       display: flex;
+       flex-direction: column;
+    }
+    .handpicked-hotel-3 {
+        position: static;
+    }
+
+    /* deals start */
+    .deals-img-container > img {
+        width: 100%;
+        height: 600px;
+    }
+    .deals-content-container{
+        width: auto;
+        height: auto;
+        top: 12%;
+        right: 10%;
+        left: 10%;
+    }
+    .deals-img-container2 > img{
+        width: 100%;
+        height: 600px;
+    }
+    .deals-content-container2{
+        width: auto;
+        height: auto;
+        top: 12%;
+        right: 10%;
+        left: 10%;
+    }
+    .deals-btn{
+        display: none;
+    }
+
+    /* perfect place */
+    .perfect-place-container{
+        max-width: 600px;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .perfect-place-content{
+        padding: 20px;
+        width: auto;
+    }
+    .perfect-place-img-container{
+        width: 100%;
+    }
+    .perfect-place-img-title{
+        right: 25%;
+    }
+
+    /* newsletter start */
+    .newsletter-container{
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .newsletter-img-container{
+        width: 100%;
+    }
+    .newsletter-img-container img{
+        max-width: 600px;
+        object-fit: cover;
+    }
+    .newsletter-coupon {
+        right: 1%;
+        bottom: 13%;
+    }
+    .newsletter-content{
+        margin: 0;
+    }
+    .newsletter-content hr{
+        width: 320px;
+    }
+    /* footer */
+    footer{
+        max-width: 600px;
+        margin-top: 30px;
+        height: 400px;
+    }
+    .footer-description{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .footer-container{
+        padding: 0;
+    }
+    #footer-hr{
+        width: 80%;
+    }
+    br{
+        display: none;
+    }
+    
 }
+
