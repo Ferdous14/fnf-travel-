@@ -4,7 +4,6 @@
 
 body {
     max-width: 1440px;
-    border: 1px solid red;
     margin: 0 auto;
 }
 
@@ -103,7 +102,7 @@ body {
 
 .btn-primary {
     width: 170px;
-    height: 52px;
+    height: 50px;
     border-radius: 8px;
     background: #FF5400;
     color: #FFF;
@@ -136,11 +135,22 @@ body {
     right: 230px;
 }
 
+#where-go,
+#when,
+#select-type {
+    padding-left: 20px;
+    border: none;
+}
+
 /* popular tour start */
 .popular-tour-container {
-    margin-top: 80px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
+}
+
+.tour-content {
+    padding-left: 50px;
 }
 
 .popular-tour-container img {
@@ -158,6 +168,17 @@ body {
     color: rgba(19, 19, 24, 0.70);
     font-size: 16px;
     font-weight: 400;
+}
+.popular-tour-btn{
+    width: 170px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 12px 25px;
+    border: 0;
 }
 
 /* destination starts */
@@ -305,7 +326,7 @@ body {
 
 /* why choose us start */
 .why-choose-us {
-    margin-top: 70px;
+    margin-top: 100px;
 }
 
 .why-choose-title {
@@ -353,7 +374,7 @@ body {
     left: 50%;
 }
 
-/* deals start */
+/* deals and discount start */
 .deals-img-container {
     max-width: 1440px;
 }
@@ -367,7 +388,7 @@ body {
     text-align: center;
     font-size: 40px;
     font-weight: 800;
-    margin: 70px auto 24px auto;
+    margin: 100px auto 24px auto;
 }
 
 .deals-description {
@@ -477,7 +498,6 @@ body {
 
 .deals-btn {
     width: 170px;
-    height: 52px;
     border-radius: 8px;
     background: #FF5400;
     color: #FFF;
@@ -486,17 +506,18 @@ body {
     font-weight: 800;
     padding: 12px 25px;
     border: 0;
-    margin: 45px auto 0 auto;
+    margin: 35px auto 0 auto;
 }
 
 /* perfect place start */
 .perfect-place-container {
-    margin-top: 80px;
+    margin-top: 100px;
     display: flex;
 }
 
 .perfect-place-content {
     width: 50%;
+    padding-left: 50px;
 }
 
 .perfect-place-img-container {
@@ -538,25 +559,66 @@ body {
     right: 30%;
 }
 
+.perfect-place-btn {
+    width: 170px;
+    height: 30px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 12px 25px;
+    border: 0;
+    margin-top: 30px;
+}
+
 /* newsletter start */
 .newsletter-container {
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
-    max-width: 1440px;
-}
-
-.newsletter-content {
-    max-width: 40%;
 }
 
 .newsletter-img-container {
-    max-width: 60%;
+    width: 772px;
+    position: relative;
 }
 
 .newsletter-img-container img {
     width: 100%;
     object-fit: cover;
+}
+
+.newsletter-coupon {
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #FF5400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 1%;
+    bottom: 10%;
+}
+
+.newsletter-coupon h4 {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.newsletter-coupon h3 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0;
+    text-align: center;
 }
 
 .newsletter-content {
@@ -586,7 +648,6 @@ body {
 }
 
 .newsletter-content hr {
-    width: 393px;
     height: 1px;
     background: rgba(19, 19, 24, 0.10);
     margin: 0 0 20px 0;
