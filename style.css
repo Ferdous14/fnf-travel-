@@ -2,10 +2,9 @@
     font-family: 'Mulish', sans-serif;
 }
 
-/* body {
-    max-width: 1440px;
+body {
     margin: 0 auto;
-} */
+}
 
 .nav-container {
     display: flex;
@@ -183,9 +182,7 @@
 }
 
 /* destination starts */
-.destination {
-    max-width: 1440px;
-}
+
 
 .destination-title {
     color: #131318;
@@ -376,11 +373,12 @@
 }
 
 /* deals and discount start */
-.deals-img-container {
-    max-width: 1440px;
-}
 
-.deals-img-container>img {
+/* .deals-img-container {
+    max-width: 1440px;
+} */
+
+.deals-img-container > img {
     width: 100%;
 }
 
@@ -445,7 +443,6 @@
 }
 
 .deals-img-container2 {
-    max-width: 1440px;
     margin: 24px 0;
 }
 
@@ -512,7 +509,6 @@
 
 /* perfect place start */
 .perfect-place-container {
-    max-width: 1440px;
     margin-top: 100px;
     display: flex;
 }
@@ -691,7 +687,6 @@
 /* footer start */
 footer {
     margin-top: 100px;
-    max-width: 1440px;
     height: 502px;
     background: rgba(19, 19, 24, 0.05);
 }
@@ -918,7 +913,7 @@ footer {
     }
     /* footer */
     footer{
-        max-width: 600px;
+        /* max-width: 600px; */
         margin-top: 30px;
         height: 400px;
     }
